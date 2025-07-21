@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Career.css';
 
 function Career() {
+  const navigate = useNavigate();
+
+  const handleStartJourney = () => {
+    navigate('/contact');
+  };
+
   return (
     <div className="career-container">
       <div className="career-content">
@@ -9,7 +16,7 @@ function Career() {
         <p className="subtitle">
           Join thousands of professionals who found their dream jobs through our platform.
         </p>
-        <button className="cta-button">Start Your Journey</button>
+        <button className="cta-button" onClick={handleStartJourney}>Start Your Journey</button>
         <p className="subtext">Free to join • No hidden fees • Instant access</p>
       </div>
       {/* These are the decorative shapes for the background effect */}

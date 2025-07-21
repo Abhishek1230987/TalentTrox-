@@ -1,30 +1,25 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from "./Componets/Navbaar/Navbaar.jsx";
 import Footer from "./Componets/Footer/Footer.jsx";
-import Enough from "./Componets/Enough/Enough.jsx";
-import WhoWeAre from "./Componets/WhoWeAre/WhoWeAre.jsx";
-import Process from "./Componets/Process/Process.jsx";
-import EveyField from "./Componets/EveyField/EveyField.jsx";
-import Opportunities from "./Componets/Opportunities/Opportunities.jsx";
-import TrustCard from "./Componets/TrustCard/TrustCard.jsx";
-import FAQ from "./Componets/FAQ/FAQ.jsx";
-import Career from "./Componets/Career/Career.jsx";
+import Home from "./pages/Home.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Enough />
-      <WhoWeAre />
-      <Process />
-      <EveyField />
-      <Opportunities />
-      <TrustCard />
-      <FAQ />
-      <Career />
-      <Footer />
-    </>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
