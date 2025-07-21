@@ -36,7 +36,7 @@
   background-color: #f1f3f5; /* Darker background for better contrast */
   border-radius: 8px; /* Less rounded initially */
   padding: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Increased shadow for more prominence */
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease, border-radius 0.3s ease;
   border: 1px solid #d1d9e6; /* Darker border for better definition */
   position: relative;
