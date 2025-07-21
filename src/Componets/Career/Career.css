@@ -44,16 +44,15 @@
   padding: 16px 45px;
   font-size: 1.1rem;
   font-weight: 600;
-  border-radius: 50px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease;
   backdrop-filter: blur(8px); /* Frosted glass effect */
   -webkit-backdrop-filter: blur(8px);
 }
 
 .cta-button:hover {
   background-color: rgba(255, 255, 255, 0.35);
-  transform: translateY(-4px);
 }
 
 /* Small text below the button */

@@ -159,19 +159,6 @@
   margin-bottom: 1.5rem;
 }
 
-.process-cta-link {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #6559d6;
-  text-decoration: none;
-  
-  padding: 10px 20px;
-  border-radius: 20px;
-}
-
-.process-cta-link:hover {
-  background-color: #d8d4f7;
-}
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {

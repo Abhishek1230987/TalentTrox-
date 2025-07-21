@@ -50,7 +50,6 @@ function Process() {
       
       <div className="process-footer">
         <p>Ready to start your journey? Our process typically takes 2-3 weeks from start to finish.</p>
-        <button onClick={() => console.log('Start Your Journey clicked')} className="process-cta-link">Start Your Journey</button>
       </div>
     </section>
   );
