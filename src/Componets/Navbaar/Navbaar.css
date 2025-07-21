@@ -54,15 +54,17 @@
   align-items: center;
   gap: 0.6rem;
   border: 1px solid transparent;
-  transition: all 0.3s ease;
 }
 
-/* Added a :focus-visible state for accessibility and an enhanced hover effect */
+/* Rotate arrow by 45 degrees up */
+.navbar-cta-button svg {
+  transform: rotate(-45deg);
+}
+
+/* Simple hover effect - only text and arrow color change */
 .navbar-cta-button:hover,
 .navbar-cta-button:focus-visible {
-  background-color: var(--hover-bg);
-  transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: #000000; /* Change text and arrow color to black */
 }
 
 
