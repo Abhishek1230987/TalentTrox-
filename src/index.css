@@ -1,0 +1,28 @@
+/* Custom CSS for TalentTrox project */
+
+/* Custom animations for gradient slide effect */
+@keyframes slideInGradient {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideOutGradient {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.slide-in-gradient {
+  animation: slideInGradient 0.4s ease-out forwards;
+}
+
+.slide-out-gradient {
+  animation: slideOutGradient 0.4s ease-out forwards;
+}
