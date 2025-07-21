@@ -5,7 +5,7 @@
   padding: 16px 32px;
   background-color: #fff; /* White background - default secondary style */
   color: #3b4b8a; /* Blue text - default secondary style */
-  border: 1px solid #d1d9e6; /* Light border - default secondary style */
+  border: none; /* No border */
   font-weight: 600;
   border-radius: 50px; /* Pill-shaped (fully rounded) */
   display: flex;
@@ -15,6 +15,7 @@
   cursor: pointer;
   font-size: 1rem;
   font-family: inherit;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-out;
   /* Prevent text shift during animation */
   min-width: 140px;
@@ -35,7 +36,7 @@
 /* Instantly change background to solid purple when leaving */
 .explore-btn-pure.leaving {
   background-color: #A066FF; /* Solid purple background */
-  border-color: #A066FF; /* Purple border */
+  border: none; /* No border */
   transition: box-shadow 0.3s ease-out;
 }
 
