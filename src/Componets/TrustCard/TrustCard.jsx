@@ -130,10 +130,8 @@ function TestimonialCard({ name, title, quote, image, rating }) {
 
 // Main TrustCard component
 function TrustCard() {
-  // Split the data into two arrays for two rows
-  const midPoint = Math.ceil(testimonialsData.length / 2);
-  const firstRowData = testimonialsData.slice(0, midPoint);
-  const secondRowData = testimonialsData.slice(midPoint);
+  // Use the same data for both rows to ensure identical widths and synchronized scrolling
+  const rowData = testimonialsData.slice(0, 6); // Use first 6 items for both rows
 
   return (
     <div className="trust-section">
@@ -142,7 +140,7 @@ function TrustCard() {
         {/* First Scrolling Row - Right to Left */}
         <div className="testimonials-scroller">
           {/* Duplicate the cards multiple times for truly seamless infinite scroll */}
-          {[...firstRowData, ...firstRowData, ...firstRowData, ...firstRowData, ...firstRowData].map((testimonial, index) => (
+          {[...rowData, ...rowData, ...rowData, ...rowData, ...rowData].map((testimonial, index) => (
             <TestimonialCard
               key={`first-${testimonial.id}-${index}`}
               name={testimonial.name}
@@ -156,7 +154,7 @@ function TrustCard() {
         {/* Second Scrolling Row - Right to Left */}
         <div className="testimonials-scroller">
           {/* Duplicate the cards multiple times for truly seamless infinite scroll */}
-          {[...secondRowData, ...secondRowData, ...secondRowData, ...secondRowData, ...secondRowData].map((testimonial, index) => (
+          {[...rowData, ...rowData, ...rowData, ...rowData, ...rowData].map((testimonial, index) => (
             <TestimonialCard
               key={`second-${testimonial.id}-${index}`}
               name={testimonial.name}
